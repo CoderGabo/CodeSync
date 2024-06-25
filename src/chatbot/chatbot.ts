@@ -4,7 +4,7 @@ import { createRun } from "./helpers/createRun.helper";
 import { getMessageList } from "./helpers/getMessageList.helper";
 import { checkCompleteStatus } from "./helpers/checkCompleteStatus.helper";
 
-const apiKey = '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'; 
+const apiKey = ''; 
 const openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
 
 export const createThread = async (): Promise<string> => {
