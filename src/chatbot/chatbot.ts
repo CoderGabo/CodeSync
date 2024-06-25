@@ -4,7 +4,7 @@ import { createRun } from "./helpers/createRun.helper";
 import { getMessageList } from "./helpers/getMessageList.helper";
 import { checkCompleteStatus } from "./helpers/checkCompleteStatus.helper";
 
-const apiKey = ''; 
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY; 
 const openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
 
 export const createThread = async (): Promise<string> => {
